@@ -16,6 +16,8 @@ public class Event<T> {
     private List<T> data;
 
     public Event() {
+        this.id = UUID.randomUUID().toString();
+        this.time = System.currentTimeMillis();
     }
 
     public Event(String verb, Type type) {
