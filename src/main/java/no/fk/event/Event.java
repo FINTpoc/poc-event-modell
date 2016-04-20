@@ -13,6 +13,7 @@ public class Event<T> {
     private String verb;
     private Type type;
     private long time;
+    private String orgId;
     private List<T> data;
 
     public Event() {
@@ -20,12 +21,21 @@ public class Event<T> {
         this.time = System.currentTimeMillis();
     }
 
-    public Event(String verb, Type type) {
+    public Event(String orgId, String verb, Type type) {
+        this.orgId = orgId;
         this.id = UUID.randomUUID().toString();
         this.verb = verb;
         this.type = type;
         this.time = System.currentTimeMillis();
         this.data = new ArrayList<>();
+    }
+
+    public String getOrgId() {
+        return orgId;
+    }
+
+    public void setOrgId(String orgId) {
+        this.orgId = orgId;
     }
 
     public String getId() {
