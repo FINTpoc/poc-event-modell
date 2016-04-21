@@ -3,6 +3,7 @@ package no.fk.event;
 import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlType;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
@@ -12,13 +13,13 @@ public class Event<T> {
     private String id;
     private String verb;
     private Type type;
-    private long time;
+    private Date time;
     private String orgId;
     private List<T> data;
 
     public Event() {
         this.id = UUID.randomUUID().toString();
-        this.time = System.currentTimeMillis();
+        this.time = new Date();
     }
 
     public Event(String orgId, String verb, Type type) {
@@ -26,7 +27,7 @@ public class Event<T> {
         this.id = UUID.randomUUID().toString();
         this.verb = verb;
         this.type = type;
-        this.time = System.currentTimeMillis();
+        this.time = new Date();
         this.data = new ArrayList<>();
     }
 
@@ -62,11 +63,11 @@ public class Event<T> {
         this.type = type;
     }
 
-    public long getTime() {
+    public Date getTime() {
         return time;
     }
 
-    public void setTime(long time) {
+    public void setTime(Date time) {
         this.time = time;
     }
 

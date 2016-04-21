@@ -8,7 +8,7 @@
       <xs:element name="data" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="id" type="xs:string" minOccurs="0"/>
       <xs:element name="orgId" type="xs:string" minOccurs="0"/>
-      <xs:element name="time" type="xs:long"/>
+      <xs:element name="time" type="xs:dateTime" minOccurs="0"/>
       <xs:element name="type" type="tns:type" minOccurs="0"/>
       <xs:element name="verb" type="xs:string" minOccurs="0"/>
     </xs:sequence>
