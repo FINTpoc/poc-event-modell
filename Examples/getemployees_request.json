@@ -1,0 +1,7 @@
+{
+    "id": "123",
+    "verb": "getEmployees",
+    "type": "REQUEST",
+    "time": 0,
+    "data": []
+}
