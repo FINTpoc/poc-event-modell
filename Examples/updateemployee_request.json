@@ -1,23 +1,24 @@
 {
-	"id": "123",
-	"verb": "updateEmployee",
-	"type": "REQUEST",
-	"time": 0,
-	"data":
-		{
-			"identifikatorer": [
-				{
-					"identifikatorverdi": "12345678901",
-					"identifikatortype": "fodselsnummer",
-					"utstedtDato": null,
-					"utstedtAvAutoritet": null,
-					"periode": null
-				}
-			],
-			"kontaktinformasjon": {
-				"epostadresse": "ole.olsen@gmail.com",
-				"telefonnummer": null,
-				"mobiltelefonnummer": "90909090"
-			}
-		}
+    "id": "123",
+    "verb": "updateEmployee",
+    "type": "REQUEST",
+    "time": 0,
+    "data": [
+        {
+            "identifikatorer": [
+                {
+                    "identifikatorverdi": "12345678901",
+                    "identifikatortype": "fodselsnummer",
+                    "utstedtDato": null,
+                    "utstedtAvAutoritet": null,
+                    "periode": null
+                }
+            ],
+            "kontaktinformasjon": {
+                "epostadresse": "ole.olsen@gmail.com",
+                "telefonnummer": null,
+                "mobiltelefonnummer": "90909090"
+            }
+        }
+    ]
 }
