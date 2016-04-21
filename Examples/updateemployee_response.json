@@ -1,0 +1,12 @@
+{
+    "id": "123",
+    "verb": "updateEmployee",
+    "type": "RESPONSE",
+    "time": 0,
+    "data": [
+        {
+            "status": "ok",
+            "message": ""
+        }
+    ]
+}

@@ -1,0 +1,40 @@
+{
+    "id": "123",
+    "verb": "getEmployee",
+    "type": "RESPONSE",
+    "time": 0,
+    "data": [
+        {
+            "identifikatorer": [
+                {
+                    "identifikatorverdi": "12345678901",
+                    "identifikatortype": "fodselsnummer",
+                    "utstedtDato": null,
+                    "utstedtAvAutoritet": null,
+                    "periode": null
+                }
+            ],
+            "kontaktinformasjon": {
+                "epostadresse": "ole.olsen@gmail.com",
+                "telefonnummer": null,
+                "mobiltelefonnummer": "90909090"
+            },
+            "fulltNavn": null,
+            "navn": {
+                "fornavn": "Ole",
+                "mellomnavn": null,
+                "etternavn": "Olsen"
+            },
+            "kjonn": "MANN",
+            "statsborgerskap": "NO",
+            "fodselsdato": 62636400000,
+            "fodested": null,
+            "dodsdato": null,
+            "dodssted": null,
+            "dodsland": null,
+            "sivilstand": "ENKE_ELLER_ENKEMANN",
+            "opprinneligNavn": null,
+            "avdeling": "IKT avdelingen"
+        }
+    ]
+}
