@@ -15,9 +15,7 @@ dependencies {
 }
 
 task createDirs() {
-    file(generatedDir).deleteDir()
     file(generatedDir).mkdirs()
-    file(resourcesDir).deleteDir()
     file(resourcesDir).mkdirs()
 }
 

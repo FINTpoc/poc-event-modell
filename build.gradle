@@ -1,3 +1,5 @@
+defaultTasks 'clean', 'schemagen', 'install'
+
 group 'no.fk'
 version '1.0-SNAPSHOT'
 
@@ -16,5 +18,3 @@ dependencies {
 }
 
 apply from: 'schemagen.gradle'
-
-install.dependsOn schemagen
