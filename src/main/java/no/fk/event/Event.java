@@ -1,18 +1,20 @@
 package no.fk.event;
 
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 @XmlRootElement
+@XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Event")
 public class Event<T> {
     private String id;
     private String verb;
+    @XmlElement(nillable = true)
     private Type type;
+    @XmlElement(nillable = true)
     private Date time;
     private String orgId;
     private List<T> data;

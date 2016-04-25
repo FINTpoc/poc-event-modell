@@ -7,26 +7,26 @@
 
   <xs:complexType name="Event">
     <xs:sequence>
-      <xs:element name="data" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
       <xs:element name="id" type="xs:string" minOccurs="0"/>
-      <xs:element name="orgId" type="xs:string" minOccurs="0"/>
-      <xs:element name="time" type="xs:dateTime" minOccurs="0"/>
-      <xs:element name="type" type="tns:type" minOccurs="0"/>
       <xs:element name="verb" type="xs:string" minOccurs="0"/>
+      <xs:element name="type" type="tns:type" nillable="true" minOccurs="0"/>
+      <xs:element name="time" type="xs:dateTime" nillable="true" minOccurs="0"/>
+      <xs:element name="orgId" type="xs:string" minOccurs="0"/>
+      <xs:element name="data" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="EventResponse">
     <xs:sequence>
-      <xs:element name="message" type="xs:string" minOccurs="0"/>
       <xs:element name="status" type="xs:string" minOccurs="0"/>
+      <xs:element name="message" type="xs:string" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:simpleType name="type">
     <xs:restriction base="xs:string">
-      <xs:enumeration value="RESPONSE"/>
       <xs:enumeration value="REQUEST"/>
+      <xs:enumeration value="RESPONSE"/>
     </xs:restriction>
   </xs:simpleType>
 </xs:schema>
