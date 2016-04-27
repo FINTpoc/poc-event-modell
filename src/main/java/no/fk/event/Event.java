@@ -12,13 +12,22 @@ import java.util.UUID;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "Event")
 public class Event<T> {
+    @XmlElement(required = true)
     private String id;
+
+    @XmlElement(required = true)
     private String verb;
-    @XmlElement(nillable = true)
+
+    @XmlElement(nillable = true, required = true)
     private Type type;
-    @XmlElement(nillable = true)
+
+    @XmlElement(nillable = true, required = true)
     private Date time;
+
+    @XmlElement(required = true)
     private String orgId;
+
+    @XmlElement(required = true)
     private List<T> data;
 
     public Event() {

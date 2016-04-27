@@ -1,15 +1,15 @@
 package no.fk.event;
 
-import javax.xml.bind.annotation.XmlAccessType;
-import javax.xml.bind.annotation.XmlAccessorType;
-import javax.xml.bind.annotation.XmlRootElement;
-import javax.xml.bind.annotation.XmlType;
+import javax.xml.bind.annotation.*;
 
 @XmlRootElement
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "EventResponse")
 public class EventResponse {
+    @XmlElement(required = true)
     private String status;
+
+    @XmlElement(required = true)
     private String message;
 
     public EventResponse() {

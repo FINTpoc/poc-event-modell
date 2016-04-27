@@ -7,19 +7,19 @@
 
   <xs:complexType name="Event">
     <xs:sequence>
-      <xs:element name="id" type="xs:string" minOccurs="0"/>
-      <xs:element name="verb" type="xs:string" minOccurs="0"/>
-      <xs:element name="type" type="tns:type" nillable="true" minOccurs="0"/>
-      <xs:element name="time" type="xs:dateTime" nillable="true" minOccurs="0"/>
-      <xs:element name="orgId" type="xs:string" minOccurs="0"/>
-      <xs:element name="data" type="xs:anyType" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+      <xs:element name="id" type="xs:string"/>
+      <xs:element name="verb" type="xs:string"/>
+      <xs:element name="type" type="tns:type" nillable="true"/>
+      <xs:element name="time" type="xs:dateTime" nillable="true"/>
+      <xs:element name="orgId" type="xs:string"/>
+      <xs:element name="data" type="xs:anyType" maxOccurs="unbounded"/>
     </xs:sequence>
   </xs:complexType>
 
   <xs:complexType name="EventResponse">
     <xs:sequence>
-      <xs:element name="status" type="xs:string" minOccurs="0"/>
-      <xs:element name="message" type="xs:string" minOccurs="0"/>
+      <xs:element name="status" type="xs:string"/>
+      <xs:element name="message" type="xs:string"/>
     </xs:sequence>
   </xs:complexType>
 
