@@ -2,7 +2,7 @@
     "id": "123",
     "verb": "getEmployee",
     "type": "RESPONSE",
-    "time": 0,
+    "time": "2016-04-17T13:12:11",
     "data": [
         {
             "identifikatorer": [
@@ -27,7 +27,7 @@
             },
             "kjonn": "MANN",
             "statsborgerskap": "NO",
-            "fodselsdato": 62636400000,
+            "fodselsdato": "1985-04-17",
             "fodested": null,
             "dodsdato": null,
             "dodssted": null,

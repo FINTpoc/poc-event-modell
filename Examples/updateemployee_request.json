@@ -2,7 +2,7 @@
     "id": "123",
     "verb": "updateEmployee",
     "type": "REQUEST",
-    "time": 0,
+    "time": "2016-04-17T13:12:11",
     "data": [
         {
             "identifikatorer": [
