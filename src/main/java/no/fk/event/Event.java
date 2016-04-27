@@ -67,7 +67,7 @@ public class Event<T> {
         this.type = type;
     }
 
-    @JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
+    @JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm:ss")
     public Date getTime() {
         return time;
     }
