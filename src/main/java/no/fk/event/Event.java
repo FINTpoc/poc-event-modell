@@ -31,6 +31,7 @@ public class Event<T> {
     public Event() {
         this.id = UUID.randomUUID().toString();
         this.time = new Date();
+        this.data = new ArrayList<>();
     }
 
     public Event(String orgId, String verb, Type type) {
