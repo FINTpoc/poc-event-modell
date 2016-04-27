@@ -14,8 +14,4 @@ repositories {
     mavenLocal()
 }
 
-dependencies {
-    compile('com.fasterxml.jackson.core:jackson-annotations:2.7.3')
-}
-
 apply from: 'schemagen.gradle'
