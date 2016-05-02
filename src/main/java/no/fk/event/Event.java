@@ -94,4 +94,16 @@ public class Event<T> {
     public void addData(T data) {
         this.data.add(data);
     }
+
+    @Override
+    public String toString() {
+        return "Event{" +
+                "id='" + id + '\'' +
+                ", verb='" + verb + '\'' +
+                ", type=" + type +
+                ", time=" + time +
+                ", orgId='" + orgId + '\'' +
+                ", data=" + data +
+                '}';
+    }
 }
